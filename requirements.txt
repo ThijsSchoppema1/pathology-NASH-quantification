@@ -1,0 +1,20 @@
+click
+scipy
+pathlib
+opencv-python
+scikit-image
+numpy
+segmentation-models-pytorch
+albumentations
+typing-extensions
+pytorch-lightning==2.0.3
+monai
+torchmetrics
+PyYAML
+seaborn
+pandas
+pillow
+# onnx
+# onnx-tf
+# tensorflow_probability
+# TensorFlow==2.11
