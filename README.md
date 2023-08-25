@@ -1,24 +1,11 @@
 # pathology-NASH-quantification
 
 ## Required packages & repositiories
-* Pathology-common: rework branch, commit: 33d23ee
-* Pathology-fast-inference: master branch, commit: de73e99
+* Pathology-common: rework branch, Radboud UMC DIAG
+* Pathology-fast-inference: master branch, Radboud UMC DIAG
 * Requirements.txt
 ** Requirements_version_all contains package versions of each package in the environment
 ** Requirements_version contains package versions of the main packages
-
-## Final model weights
-The final model weights of both segmentation models can be found at:
-`./final_weights`
-With `segment_portal` containing the weights of the portal model and `segment_steatosis_inflammation` of the steatosis & inflammation model
-
-## Docker
-The segmentation models & post-processing pipeline can be run with the docker `doduo1.umcn.nl/thijs_schoppema/NASH_quantification:1.0`.
-The docker has as entrypoint `run.sh` found at `./docker/run.sh`.
-This file requires 3 different inputs:
-* The folder containing the HE&E WSIs with spacings of 0.5 and 4.0
-* A folder containing tissue background masks created with the docker `doduo1.umcn.nl/peter/algorithm-tissue-background-segmentation:2`. The result should be a tissue-background mask with a spcacing of 2.0
-* The output folder to store the results
 
 ## Project page
 Further information about the project can be found on:
